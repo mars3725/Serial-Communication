@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F2142A28ABEEE546406E6A092FC5F3571A561E44",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F2142A28ABEEE546406E6A092FC5F3571A561E44" : 0,
+    "5A811E91F5DFF59170683E14D2C5755F19DE18CB" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3887FA5F-4594-40B1-A60D-631515EA39A2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F2142A28ABEEE546406E6A092FC5F3571A561E44" : "SerialCommunication\/",
+    "5A811E91F5DFF59170683E14D2C5755F19DE18CB" : "SerialCommunication\/Frameworks\/ORSSerialPort\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SerialCommunication",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SerialCommunication.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/armadsen\/ORSSerialPort.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5A811E91F5DFF59170683E14D2C5755F19DE18CB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mars3725\/Serial-Communication.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2142A28ABEEE546406E6A092FC5F3571A561E44"
+    }
+  ]
+}
