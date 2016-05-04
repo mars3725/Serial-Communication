@@ -10,16 +10,44 @@
 		344FAF511CC9266F00353CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FAF501CC9266F00353CFC /* AppDelegate.swift */; };
 		344FAF531CC9266F00353CFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FAF521CC9266F00353CFC /* ViewController.swift */; };
 		344FAF551CC9266F00353CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344FAF541CC9266F00353CFC /* Assets.xcassets */; };
-		344FAF581CC9266F00353CFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344FAF561CC9266F00353CFC /* Main.storyboard */; };
+		344FAF6A1CC9271A00353CFC /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344FAF651CC926FF00353CFC /* ORSSerial.framework */; };
+		344FAF6C1CC9279B00353CFC /* SerialCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FAF6B1CC9279B00353CFC /* SerialCommunicator.swift */; };
+		34D550C81CD8DE92008CCC7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D550C71CD8DE92008CCC7A /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		344FAF641CC926FF00353CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344FAF5F1CC926FF00353CFC /* ORSSerialPort.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9DCA89121A2BB106009285EB;
+			remoteInfo = ORSSerial;
+		};
+		344FAF661CC926FF00353CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344FAF5F1CC926FF00353CFC /* ORSSerialPort.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D7472131B6D7767002D8B10;
+			remoteInfo = "ORSSerialPort Tests";
+		};
+		344FAF681CC9271500353CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344FAF5F1CC926FF00353CFC /* ORSSerialPort.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DCA89111A2BB106009285EB;
+			remoteInfo = ORSSerial;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		344FAF4D1CC9266F00353CFC /* SerialCommunication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerialCommunication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344FAF501CC9266F00353CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344FAF521CC9266F00353CFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		344FAF541CC9266F00353CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		344FAF571CC9266F00353CFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		344FAF591CC9266F00353CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344FAF5F1CC926FF00353CFC /* ORSSerialPort.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ORSSerialPort.xcodeproj; path = "Frameworks/ORSSerialPort/Framework Project/ORSSerialPort.xcodeproj"; sourceTree = "<group>"; };
+		344FAF6B1CC9279B00353CFC /* SerialCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerialCommunicator.swift; sourceTree = "<group>"; };
+		34D550C71CD8DE92008CCC7A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344FAF6A1CC9271A00353CFC /* ORSSerial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +65,7 @@
 		344FAF441CC9266F00353CFC = {
 			isa = PBXGroup;
 			children = (
+				344FAF5F1CC926FF00353CFC /* ORSSerialPort.xcodeproj */,
 				344FAF4F1CC9266F00353CFC /* SerialCommunication */,
 				344FAF4E1CC9266F00353CFC /* Products */,
 			);
@@ -54,11 +84,21 @@
 			children = (
 				344FAF501CC9266F00353CFC /* AppDelegate.swift */,
 				344FAF521CC9266F00353CFC /* ViewController.swift */,
+				344FAF6B1CC9279B00353CFC /* SerialCommunicator.swift */,
 				344FAF541CC9266F00353CFC /* Assets.xcassets */,
-				344FAF561CC9266F00353CFC /* Main.storyboard */,
 				344FAF591CC9266F00353CFC /* Info.plist */,
+				34D550C71CD8DE92008CCC7A /* Main.storyboard */,
 			);
 			path = SerialCommunication;
+			sourceTree = "<group>";
+		};
+		344FAF601CC926FF00353CFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344FAF651CC926FF00353CFC /* ORSSerial.framework */,
+				344FAF671CC926FF00353CFC /* ORSSerialPort Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +115,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				344FAF691CC9271500353CFC /* PBXTargetDependency */,
 			);
 			name = SerialCommunication;
 			productName = SerialCommunication;
@@ -107,6 +148,12 @@
 			mainGroup = 344FAF441CC9266F00353CFC;
 			productRefGroup = 344FAF4E1CC9266F00353CFC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 344FAF601CC926FF00353CFC /* Products */;
+					ProjectRef = 344FAF5F1CC926FF00353CFC /* ORSSerialPort.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				344FAF4C1CC9266F00353CFC /* SerialCommunication */,
@@ -114,13 +161,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		344FAF651CC926FF00353CFC /* ORSSerial.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ORSSerial.framework;
+			remoteRef = 344FAF641CC926FF00353CFC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		344FAF671CC926FF00353CFC /* ORSSerialPort Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ORSSerialPort Tests.xctest";
+			remoteRef = 344FAF661CC926FF00353CFC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		344FAF4B1CC9266F00353CFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				344FAF551CC9266F00353CFC /* Assets.xcassets in Resources */,
-				344FAF581CC9266F00353CFC /* Main.storyboard in Resources */,
+				34D550C81CD8DE92008CCC7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,21 +197,19 @@
 			files = (
 				344FAF531CC9266F00353CFC /* ViewController.swift in Sources */,
 				344FAF511CC9266F00353CFC /* AppDelegate.swift in Sources */,
+				344FAF6C1CC9279B00353CFC /* SerialCommunicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		344FAF561CC9266F00353CFC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				344FAF571CC9266F00353CFC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		344FAF691CC9271500353CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ORSSerial;
+			targetProxy = 344FAF681CC9271500353CFC /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		344FAF5A1CC9266F00353CFC /* Debug */ = {
@@ -275,6 +337,7 @@
 				344FAF5E1CC9266F00353CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
