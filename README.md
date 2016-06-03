@@ -7,6 +7,4 @@ Wire the arduino like such (from [this](http://randomnerdtutorials.com/arduino-c
 
 [logo]: http://i2.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/09/DC-motor-Schematics.png?resize=427%2C521 "It's not as bad as it looks)
 
-This project uses ORSSerialPort by armadsen. 
-
-An instalation guide can be found [here](https://github.com/armadsen/ORSSerialPort/wiki/Installing-ORSSerialPort)
+This project uses ORSSerialPort by armadsen. An instalation guide can be found [here](https://github.com/armadsen/ORSSerialPort/wiki/Installing-ORSSerialPort)
