@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3443F4A81D01F46B0060A876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3443F4A61D01F46B0060A876 /* Main.storyboard */; };
 		344FAF511CC9266F00353CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FAF501CC9266F00353CFC /* AppDelegate.swift */; };
 		344FAF531CC9266F00353CFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FAF521CC9266F00353CFC /* ViewController.swift */; };
 		344FAF551CC9266F00353CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344FAF541CC9266F00353CFC /* Assets.xcassets */; };
 		344FAF6A1CC9271A00353CFC /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344FAF651CC926FF00353CFC /* ORSSerial.framework */; };
-		34D550C81CD8DE92008CCC7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D550C71CD8DE92008CCC7A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3443F4A71D01F46B0060A876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../../Desktop/Game/Game/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		344FAF4D1CC9266F00353CFC /* SerialCommunication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerialCommunication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344FAF501CC9266F00353CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344FAF521CC9266F00353CFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		344FAF541CC9266F00353CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		344FAF591CC9266F00353CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		344FAF5F1CC926FF00353CFC /* ORSSerialPort.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ORSSerialPort.xcodeproj; path = "Frameworks/ORSSerialPort/Framework Project/ORSSerialPort.xcodeproj"; sourceTree = "<group>"; };
-		34D550C71CD8DE92008CCC7A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 				344FAF501CC9266F00353CFC /* AppDelegate.swift */,
 				344FAF521CC9266F00353CFC /* ViewController.swift */,
 				344FAF541CC9266F00353CFC /* Assets.xcassets */,
+				3443F4A61D01F46B0060A876 /* Main.storyboard */,
 				344FAF591CC9266F00353CFC /* Info.plist */,
-				34D550C71CD8DE92008CCC7A /* Main.storyboard */,
 			);
 			path = SerialCommunication;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				344FAF551CC9266F00353CFC /* Assets.xcassets in Resources */,
-				34D550C81CD8DE92008CCC7A /* Main.storyboard in Resources */,
+				3443F4A81D01F46B0060A876 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +206,17 @@
 			targetProxy = 344FAF681CC9271500353CFC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3443F4A61D01F46B0060A876 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3443F4A71D01F46B0060A876 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		344FAF5A1CC9266F00353CFC /* Debug */ = {

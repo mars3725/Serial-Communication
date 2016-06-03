@@ -20,6 +20,10 @@ class ViewController: NSViewController, ORSSerialPortDelegate, NSUserNotificatio
     var serialPort: ORSSerialPort?
     var openPort = false
     
+    override func viewDidAppear() {
+        self.view.window!.styleMask = NSClosableWindowMask | NSTitledWindowMask | NSMiniaturizableWindowMask
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         leftSlider.continuous = true
@@ -30,10 +34,7 @@ class ViewController: NSViewController, ORSSerialPortDelegate, NSUserNotificatio
         nc.addObserver(self, selector: #selector(serialPortsWereDisconnected(_:)), name: ORSSerialPortsWereDisconnectedNotification, object: nil)
         
         NSUserNotificationCenter.defaultUserNotificationCenter().delegate = self
-        
-        serialPort = ORSSerialPortManager.sharedSerialPortManager().availablePorts.first
-        serialPort!.baudRate = avaliableBaudRates[0]
-        //exit(EXIT_FAILURE)
+
     }
     
     func serialPortsWereConnected(notification: NSNotification) {
@@ -77,9 +78,9 @@ class ViewController: NSViewController, ORSSerialPortDelegate, NSUserNotificatio
         let event = NSApplication.sharedApplication().currentEvent
         var trueValue = 5 //5 not valid
         if event!.type == .LeftMouseDragged {
-            if sender.doubleValue > 50 {
+            if sender.doubleValue > sender.maxValue/2 {
                 trueValue = 4
-            } else if sender.doubleValue < 50 {
+            } else if sender.doubleValue < sender.maxValue/2 {
                 trueValue = 6
             }
         } else if event!.type == .LeftMouseUp {
@@ -116,13 +117,5 @@ class ViewController: NSViewController, ORSSerialPortDelegate, NSUserNotificatio
             print(serialPort!.name + " opened on rate " + serialPort!.baudRate.stringValue)
             openPort = true
         }
-    }
-    
-    @IBAction func portSelected(sender: NSPopUpButton) {
-        serialPort = availablePorts[sender.selectedTag()]
-    }
-    
-    @IBAction func baudRateSelected(sender: NSPopUpButton) {
-        serialPort?.baudRate = Int(sender.titleOfSelectedItem!)!
     }
 }
